@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+{% block body %}
+<h1 class="d-flex justify-content-center">Adding system</h1>
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <input class="form-control" type="number" aria-label="readonly input example" name="num1">
+        <br>
+        <h3>+</h3>
+        <br>
+        <input class="form-control" type="number" aria-label="readonly input example" name="num2">
+        <br>
+        <button type="submit">submit</button>
+    </form>
+    <br>
+
+    <h2 class="d-flex justify-content-center">Result = {{result}}</h2>
+{% for i in prof %}
+    <p>{{i.name}}</p>
+    <p>{{i.email}}</p>
+    <p>{{i.age}}</p>
+    {% endfor %}
+</div>
+{% endblock %}
