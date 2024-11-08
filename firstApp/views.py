@@ -9,3 +9,7 @@ def Home(request):
     prof = Profile.objects.filter(name__icontains='a')
     print(prof)
     return render(request, 'home.html', locals())
+
+
+def new_text():
+    pass 
