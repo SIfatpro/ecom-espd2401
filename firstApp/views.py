@@ -12,4 +12,4 @@ def Home(request):
 
 
 def new_text():
-    pass 
+    return 0 
