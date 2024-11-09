@@ -13,3 +13,9 @@ def Home(request):
 
 def new_text():
     return 0 
+
+def new_text_2():
+    pass
+
+def for_mursalin():
+    pass
